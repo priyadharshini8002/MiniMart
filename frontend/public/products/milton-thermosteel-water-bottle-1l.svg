@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF8F0"/>
+      <stop offset="1" stop-color="#F5EBDD"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="275" r="190" fill="#FFFFFF" stroke="#E5D5C3" stroke-width="4"/>
+  <circle cx="300" cy="275" r="160" fill="#F5EBDD"/>
+  <text x="300" y="275" font-size="190" text-anchor="middle" dominant-baseline="central">🧴</text>
+  <rect x="150" y="490" width="300" height="44" rx="22" fill="#5D4037"/>
+  <text x="300" y="513" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Milton</text>
+</svg>

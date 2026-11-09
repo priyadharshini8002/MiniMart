@@ -1,0 +1,218 @@
+/* navbar.css - dark brown navigation bar and footer */
+
+.navbar {
+  background-color: var(--dark-brown);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+
+.navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.logo span {
+  color: var(--caramel);
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: 1px solid var(--caramel);
+  color: var(--white);
+  font-size: 1.4rem;
+  padding: 2px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-links a,
+.link-button {
+  color: var(--cream);
+  font-size: 0.95rem;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover,
+.link-button:hover {
+  color: var(--caramel);
+}
+
+.nav-links a.active {
+  border-bottom-color: var(--caramel);
+}
+
+.link-button {
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.register-link {
+  background-color: var(--caramel);
+  color: var(--white) !important;
+  padding: 6px 14px !important;
+  border-radius: 6px;
+  border-bottom: none !important;
+}
+
+.register-link:hover {
+  background-color: var(--coffee-brown);
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form input {
+  margin: 0;
+  width: 170px;
+  padding: 7px 10px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.search-form button {
+  background-color: var(--caramel);
+  color: var(--white);
+  border: none;
+  padding: 7px 12px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.search-form button:hover {
+  background-color: var(--coffee-brown);
+}
+
+.cart-link {
+  position: relative;
+  font-weight: 600;
+}
+
+.cart-count {
+  background-color: var(--caramel);
+  color: var(--white);
+  font-size: 0.75rem;
+  border-radius: 50%;
+  padding: 1px 7px;
+  margin-left: 4px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: var(--chocolate-brown);
+  color: var(--beige);
+  margin-top: 50px;
+}
+
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 20px 20px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.4fr 1fr;
+  gap: 30px;
+}
+
+.footer h3,
+.footer h4 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.footer a {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: var(--beige);
+}
+
+.footer a:hover {
+  color: var(--caramel);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 14px;
+  border-top: 1px solid var(--coffee-brown);
+  font-size: 0.85rem;
+}
+
+/* ---------- Tablet and mobile ---------- */
+@media (max-width: 960px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a,
+  .link-button {
+    padding: 10px 4px;
+    text-align: left;
+  }
+
+  .register-link {
+    text-align: center !important;
+  }
+
+  .search-form input {
+    width: 100%;
+    flex: 1;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}
