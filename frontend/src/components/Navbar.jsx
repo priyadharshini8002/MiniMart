@@ -32,8 +32,8 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-inner">
-        <Link to="/" className="logo" onClick={closeMenu}>
-          🛍️ Mini<span>Mart</span>
+        <Link to="/" className="logo" onClick={closeMenu} aria-label="MiniMart home">
+          <img src="/minimart-logo.png" alt="MiniMart" className="brand-logo" />
         </Link>
 
         <button
